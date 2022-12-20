@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg?w=2000');
+            text-align: center;
+            color: chocolate;
+        }
+        input[type=text] {
+        width: 20%;
+        padding: 12px 20px;
+        
+        box-sizing: border-box;
+        }
+        input[type=integer]
+        {
+        width: 20%;
+        padding: 12px 12px;
+        
+        box-sizing: border-box;  
+        }
+        input[type=number]{
+        width: 20%;
+        padding: 12px 12px;
+        
+        box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Data Filling Form</h2>
+    <form action="/insert" method = "POST">
+        <label for="name"> Name :</label>
+        <p><input type = "text" id="name" name = "name" placeholder="Name"size="15"required/></p>
+        <label for="age">Age :</label>
+        <p><input type = "integer" id="age" name = "age" placeholder="Age"size="15"required/></p>
+        <label for="email">Email Id :</label>
+        <p><input type = "text" id="email" name = "email" placeholder="Email"size="15"required/></p>
+        <label for="address">Address :</label>
+        <p><input type = "text" id="address" name = "address" placeholder="Address"size="15"required/></p>
+        <label for="salary">Salary :</label>
+        <p><input type = "number" id="salary" name = "salary" placeholder="Salary"size="15"required/></p>
+    
+        <p><input type = "submit" value = "Submit" /></p>
+     </form>
+     <b>{{response}}</b>
+</body>
+</html>

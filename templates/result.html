@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/premium-vector/blue-green-gradient-background-with-bokeh-effect_23-2148358651.jpg?w=2000');
+            text-align: center;
+            color:#3602d4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="/getdata" method = "POST">
+        
+        <label for="Tables"><b>Choose a Table name:</b></label>
+
+        <select name="tablename" id="tablename">
+            <option>--SELECT--</option>
+          <option value="Employees">Employees</option>
+          <option value="Customers">Customers</option>
+          <option value="Students">Student</option>
+          
+          
+        </select> 
+        <p><input type = "submit" tname = getdata /></p>
+        
+    </form>
+    {{result}}
+</body>
+</html>
